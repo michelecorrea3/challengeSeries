@@ -1,0 +1,56 @@
+[{
+    "score": 0.6926346,
+    "show": {
+        "id": 12444,
+        "url": "https://www.tvmaze.com/shows/12444/johnny-test",
+        "name": "Johnny Test",
+        "type": "Animation",
+        "language": "English",
+        "genres": ["Comedy", "Science-Fiction"],
+        "status": "Ended",
+        "runtime": null,
+        "averageRuntime": 15,
+        "premiered": "2005-09-17",
+        "ended": "2014-06-18",
+        "officialSite": "http://www.cartoonnetwork.com/video/johnnytest/",
+        "schedule": {
+            "time": "",
+            "days": ["Wednesday"]
+        },
+        "rating": {
+            "average": null
+        },
+        "weight": 80,
+        "network": {
+            "id": 11,
+            "name": "Cartoon Network",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "officialSite": null
+        },
+        "webChannel": null,
+        "dvdCountry": null,
+        "externals": {
+            "tvrage": null,
+            "thetvdb": 134991,
+            "imdb": "tt0454349"
+        },
+        "image": {
+            "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/42/106275.jpg",
+            "original": "https://static.tvmaze.com/uploads/images/original_untouched/42/106275.jpg"
+        },
+        "summary": "<p>Imagine having two twin brainiac sisters who are 13 years old and can bring up out-of-this-world experiments. Well lucky for <b>Johnny Test</b> and his super talking dog, Dukey. They can. Super-powers, gadgets that can rewind a person or turning things into gold... for Johnny the possibilities are endless. But whenever there is trouble, Johnny has to go back home before 5 P.M. for meatloaf.</p>",
+        "updated": 1629939297,
+        "_links": {
+            "self": {
+                "href": "https://api.tvmaze.com/shows/12444"
+            },
+            "previousepisode": {
+                "href": "https://api.tvmaze.com/episodes/592959"
+            }
+        }
+    }
+}]
