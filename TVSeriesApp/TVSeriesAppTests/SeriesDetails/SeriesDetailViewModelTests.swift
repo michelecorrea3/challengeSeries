@@ -72,7 +72,7 @@ class SeriesDetailViewModelTests: XCTestCase {
         let numberOfSections = viewModel.numberOfSections()
         
         // Then
-        XCTAssertEqual(numberOfSections, 1)
+        XCTAssertEqual(numberOfSections, 0)
     }
     
     func testNumberOfRowsForSection_validData() {
@@ -98,7 +98,7 @@ class SeriesDetailViewModelTests: XCTestCase {
         let numberOfRowsForSection = viewModel.numberOfRowsForSection(section: 1)
         
         // Then
-        XCTAssertEqual(numberOfRowsForSection, 0)
+        XCTAssertEqual(numberOfRowsForSection, 1)
     }
     
     func testNumberOfRowsForSection_sectionDifferentFromZero_invalidData() {
@@ -110,7 +110,7 @@ class SeriesDetailViewModelTests: XCTestCase {
         let numberOfRowsForSection = viewModel.numberOfRowsForSection(section: 1)
         
         // Then
-        XCTAssertEqual(numberOfRowsForSection, 0)
+        XCTAssertEqual(numberOfRowsForSection, 1)
     }
     
     func testGetParamsDTO_validData() {
@@ -120,7 +120,7 @@ class SeriesDetailViewModelTests: XCTestCase {
         viewModel.loadSeriesDetails(with: 122)
 
         // When
-        let params = viewModel.getParamsDTO(indexPath: IndexPath(row: 0, section: 2))
+        let params = viewModel.getParamsDTO(indexPath: IndexPath(row: 0, section: 1))
         
         // Then
         XCTAssertEqual(params.id, 123)

@@ -55,17 +55,24 @@ class SeriesDetailViewModel: SeriesDetailViewModelProtocol {
     }
     
     func numberOfSections() -> Int {
-        return (data?.model.episodesBySeason.keys.count ?? 0) + 1
+        guard let viewData = data else {
+            return 0
+        }
+        return viewData.model.episodesBySeason.count + 1
     }
     
     func numberOfRowsForSection(section: Int) -> Int {
-        return section == 0 ? 1 : (data?.model.episodesBySeason[section]?.count ?? 0)
+        guard let viewData = data, section != 0 else {
+            return 1
+        }
+
+        return viewData.model.episodesBySeason[section-1].1.count
     }
     
     func getParamsDTO(indexPath: IndexPath) -> EpisodeParamsDTO {
         let id = data?.model.mainInfo.id ?? 0
-        let season = data?.model.episodesBySeason[indexPath.section]?[indexPath.row].season ?? 0
-        let number = data?.model.episodesBySeason[indexPath.section]?[indexPath.row].number ?? 0
+        let season = data?.model.episodesBySeason[indexPath.section-1].1[indexPath.row].season ?? 0
+        let number = data?.model.episodesBySeason[indexPath.section-1].1[indexPath.row].number ?? 0
         return EpisodeParamsDTO(id: id, season: season, number: number)
     }
 }

@@ -33,15 +33,19 @@ struct SeriesDetailViewData {
     // MARK: - Public methods
 
     func seasonName(section: Int) -> String {
-        guard let season = model.episodesBySeason[section]?.first?.season else {
+        if section == 0 {
             return ""
         }
+        
+        let season = model.episodesBySeason[section-1].0
         return String(format: "Season %d", season)
     }
     
     func episodeName(section: Int, index: Int) -> String {
-        return model.episodesBySeason[section]?[index].name ?? ""
+        if section == 0 {
+            return ""
+        }
+
+        return model.episodesBySeason[section-1].1[index].name
     }
-    
-    
 }

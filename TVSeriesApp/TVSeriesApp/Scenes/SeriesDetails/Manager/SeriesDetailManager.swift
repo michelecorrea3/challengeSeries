@@ -44,7 +44,7 @@ class SeriesDetailManager: SeriesDetailManagerProtocol {
                 }
                 
                 success(SeriesDetailModel(mainInfo: details,
-                                          episodesBySeason: episodesBySeason))
+                                          episodesBySeason: episodesBySeason.sorted(by: { $0.0 < $1.0 })))
                 
             } failure: { (_) in
                 failure(SeriesError.generic)

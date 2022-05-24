@@ -107,7 +107,7 @@ extension SeriesDetailViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.section == 0 {
+        if indexPath.section == 0 && indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SeriesDetailHeaderCell.self), for: indexPath) as? SeriesDetailHeaderCell,
                   let viewData = viewModel.data else {
                 return UITableViewCell()

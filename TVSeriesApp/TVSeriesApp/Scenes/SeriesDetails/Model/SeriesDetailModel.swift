@@ -9,5 +9,5 @@ import Foundation
 
 struct SeriesDetailModel {
     let mainInfo: SeriesDetailResponse
-    let episodesBySeason: [Int: [EpisodesBySeasonResponse]]
+    let episodesBySeason: Array<(Int, [EpisodesBySeasonResponse])>
 }

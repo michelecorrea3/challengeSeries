@@ -123,7 +123,7 @@ class SeriesDetailViewControllerTests: XCTestCase {
     // MARK: - Private methods
     
     private func createViewData() -> SeriesDetailViewData {
-        return SeriesDetailViewData(model: SeriesDetailModel(mainInfo: SeriesDetailResponse(id: 123, name: "name", genres: [], premiered: "21/10/2010", ended: nil, schedule: SeriesDetailSchedule(days: ["Monday"], time: "22:00"), summary: "summary", image: nil), episodesBySeason: [1 : [EpisodesBySeasonResponse(id: 1, name: "name", number: 1, season: 1)]]))
+        return SeriesDetailViewData(model: SeriesDetailModel(mainInfo: SeriesDetailResponse(id: 123, name: "name", genres: [], premiered: "21/10/2010", ended: nil, schedule: SeriesDetailSchedule(days: ["Monday"], time: "22:00"), summary: "summary", image: nil), episodesBySeason: [(1, [EpisodesBySeasonResponse(id: 1, name: "name", number: 1, season: 1)])]))
     }
 }
 
