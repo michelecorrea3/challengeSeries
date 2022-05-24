@@ -1,19 +1,15 @@
 //
-//  ErrorView.swift
+//  EmptyView.swift
 //  TVSeriesApp
 //
-//  Created by Michele de Olivio Corrêa on 21/05/22.
+//  Created by Michele de Olivio Corrêa on 24/05/22.
 //
 
-// <a href="https://www.flaticon.com/free-icons/no-results" title="no results icons">No results icons created by Kalashnyk - Flaticon</a>
+// <a href="https://www.flaticon.com/free-icons/empty" title="empty icons">Empty icons created by smashingstocks - Flaticon</a>
 
 import UIKit
 
-protocol ErrorViewDelegate: class {
-    func tryAgain()
-}
-
-class ErrorView: UIView {
+class EmptyView: UIView {
     
     // MARK: - UI Properties
     
@@ -37,7 +33,7 @@ class ErrorView: UIView {
     let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Sorry, an error occurred!"
+        label.text = "You haven't favorited any series yet!"
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         label.textColor = .black
@@ -47,42 +43,19 @@ class ErrorView: UIView {
     let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "error")
+        imageView.image = UIImage(named: "empty")
         return imageView
     }()
     
-    let tryAgainButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("try again", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.isUserInteractionEnabled = true
-        button.isEnabled = true
-        button.backgroundColor = .darkGray
-        button.layer.cornerRadius = 10
-        button.clipsToBounds = true
-
-        return button
-    }()
-    
-    // MARK: - Properties
-
-    weak var delegate: ErrorViewDelegate?
-    
-    // MARK: - Actions
-    
-    @objc func tryAgainAction() {
-        delegate?.tryAgain()
-        contentView.removeFromSuperview()
-    }
-    
     // MARK: - Public methods
 
-    func showError(in view: UIView, delegate: ErrorViewDelegate) {
-        self.delegate = delegate
-        
+    func showEmptyView(in view: UIView) {
         buildView(with: view)
         setupConstraints(for: view)
+    }
+    
+    func hideEmptyView() {
+        contentView.removeFromSuperview()
     }
     
     // MARK: - Private methods
@@ -90,11 +63,8 @@ class ErrorView: UIView {
     private func buildView(with view: UIView) {
         contentView.backgroundColor = .white
         
-        tryAgainButton.addTarget(self, action: #selector(tryAgainAction), for: .touchUpInside)
-
         titleContainer.addSubview(titleLabel)
         contentView.addSubview(titleContainer)
-        contentView.addSubview(tryAgainButton)
         contentView.addSubview(imageView)
         
         view.addSubview(contentView)
@@ -115,11 +85,6 @@ class ErrorView: UIView {
             imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             imageView.heightAnchor.constraint(equalToConstant: 200),
             imageView.widthAnchor.constraint(equalToConstant: 200),
-            
-            tryAgainButton.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 30),
-            tryAgainButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -30),
-            tryAgainButton.heightAnchor.constraint(equalToConstant: 50),
-            tryAgainButton.widthAnchor.constraint(equalToConstant: 130),
 
             contentView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
             contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -127,4 +92,5 @@ class ErrorView: UIView {
             contentView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor)
         ])
     }
+
 }

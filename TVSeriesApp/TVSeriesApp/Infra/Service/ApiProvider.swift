@@ -18,8 +18,9 @@ class ApiProvider: ApiProviderProtocol {
         AF.request(request.url,
                    method: getMethod(request.method),
                    parameters: request.query)
+            
             .responseDecodable(of: T.self) { response in
-                
+
                 guard let result = response.value, response.error == nil else {
                     failure(SeriesError.generic)
                     return

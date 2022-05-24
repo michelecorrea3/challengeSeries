@@ -28,11 +28,15 @@ class ViewController: UIViewController {
     private let viewModel = SeriesViewModel()
 
     // MARK: - Overrides
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 
         setupViews()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         viewModel.loadSeries()
     }
@@ -131,7 +135,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         selectedCellIndex = indexPath.row
-
         performSegue(withIdentifier: "SeriesDetailViewControllerSegue", sender: nil)
     }
     
@@ -151,6 +154,12 @@ extension ViewController: UISearchBarDelegate {
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         viewModel.searchTextDidChange(searchText)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        if searchBar.text?.isEmpty == true {
+            viewModel.loadSeries()
+        }
     }
 }
 

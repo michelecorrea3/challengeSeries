@@ -16,6 +16,8 @@ struct SeriesDetailResponse: Codable {
     let schedule: SeriesDetailSchedule
     let summary: String
     let image: SeriesImage?
+    
+    var isFavorite: Bool?
 }
 
 struct SeriesDetailSchedule: Codable {

@@ -27,6 +27,7 @@ class SeriesViewModel {
     private var pageCount = 0
     private var data: [SeriesInfoCellViewData] = []
     private let service: SeriesServiceProtocol
+    private let favoriteService = FavoriteService()
     
     // MARK: - Initializers
 
@@ -47,8 +48,10 @@ class SeriesViewModel {
         pageCount += 1
         
         service.loadSeries(for: pageCount, success: { [weak self] result in
-            self?.data = result.compactMap {
-                SeriesInfoCellViewData(title: $0.name, urlImage: $0.image?.medium ?? "", id: $0.id)
+            self?.data = result.compactMap { show in
+                let isFavorited = self?.favoriteService.loadFavorites().contains(where: { $0.id == show.id})
+
+                return SeriesInfoCellViewData(title: show.name, urlImage: show.image?.medium ?? "", id: show.id, isFavorited: isFavorited)
             }
             self?.state.value = .data
         },
@@ -67,8 +70,9 @@ class SeriesViewModel {
         setLoadingState()
         
         service.searchSerie(for: name, success: { [weak self] result in
-            self?.data = result.compactMap {
-                SeriesInfoCellViewData(title: $0.show.name, urlImage: $0.show.image?.medium ?? "", id: $0.show.id)
+            self?.data = result.compactMap { show in
+                let isFavorited = self?.favoriteService.loadFavorites().contains(where: { $0.id == show.show.id})
+                return SeriesInfoCellViewData(title: show.show.name, urlImage: show.show.image?.medium ?? "", id: show.show.id, isFavorited: isFavorited)
             }
             
             self?.state.value = .data

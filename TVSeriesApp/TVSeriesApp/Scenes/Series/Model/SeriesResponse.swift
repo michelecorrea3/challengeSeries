@@ -11,6 +11,8 @@ struct SeriesResponse: Codable {
     let id: Int
     let name: String
     let image: SeriesImage?
+    
+    var isFavorited: Bool?
 }
 
 struct SeriesImage: Codable {

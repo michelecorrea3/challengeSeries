@@ -11,4 +11,5 @@ struct SeriesInfoCellViewData {
     var title: String
     var urlImage: String
     var id: Int
+    var isFavorited: Bool?
 }
