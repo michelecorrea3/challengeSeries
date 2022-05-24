@@ -13,20 +13,40 @@ enum SeriesDetailState {
     case error
     case data
 }
-class SeriesDetailViewModel {
+
+protocol SeriesDetailViewModelProtocol {
+    var state: Observable<SeriesDetailState> { get }
+    var data: SeriesDetailViewData? { get }
     
-    // MARK: - Properties
+    func loadSeriesDetails(with id: Int?)
+    func getParamsDTO(indexPath: IndexPath) -> EpisodeParamsDTO
+    func numberOfSections() -> Int
+    func numberOfRowsForSection(section: Int) -> Int
+}
+
+class SeriesDetailViewModel: SeriesDetailViewModelProtocol {
+    
+    // MARK: - Public properties
 
     var state: Observable<SeriesDetailState> = Observable(.initial)
     var data: SeriesDetailViewData?
+    
+    // MARK: - Private properties
+    
+    let manager: SeriesDetailManagerProtocol
 
+    // MARK: - Initializers
+    init(manager: SeriesDetailManagerProtocol = SeriesDetailManager()) {
+        self.manager = manager
+    }
+    
     // MARK: - Public methods
 
     func loadSeriesDetails(with id: Int?) {
         state.value = .loading
         
         guard let id = id else { return }
-        SeriesDetailManager().loadAllDetails(id: id) { details in
+        manager.loadAllDetails(id: id) { details in
             self.data = SeriesDetailViewData(model: details)
             self.state.value = .data
         } failure: { _ in

@@ -43,6 +43,8 @@
 		9C17C83D28397F7F00A39497 /* SeriesSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C17C83C28397F7F00A39497 /* SeriesSearchRequest.swift */; };
 		9C6658382839B13600F858B9 /* SeriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6658372839B13600F858B9 /* SeriesDetailViewController.swift */; };
 		9C6658402839B9B400F858B9 /* SeriesDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66583F2839B9B400F858B9 /* SeriesDetailService.swift */; };
+		9C9AE124283BE7C2009DCB63 /* SeriesDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9AE123283BE7C2009DCB63 /* SeriesDetailViewModelTests.swift */; };
+		9C9AE12C283BF989009DCB63 /* SeriesDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9AE12B283BF989009DCB63 /* SeriesDetailViewControllerTests.swift */; };
 		9C9CF94C283B056600F7F35D /* SeriesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CF94B283B056600F7F35D /* SeriesServiceTests.swift */; };
 		9C9CF961283B06CB00F7F35D /* loadSeriesSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C9CF960283B06CB00F7F35D /* loadSeriesSuccess.json */; };
 		9C9CF966283B0F8000F7F35D /* loadSearchSeriesSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C9CF965283B0F8000F7F35D /* loadSearchSeriesSuccess.json */; };
@@ -59,6 +61,9 @@
 		9C9CF9CE283B1D1A00F7F35D /* SeriesServiceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CF9CD283B1D1A00F7F35D /* SeriesServiceProtocolMock.swift */; };
 		9C9CF9D6283B21DB00F7F35D /* XCTest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CF9D5283B21DB00F7F35D /* XCTest+.swift */; };
 		9C9CF9DB283B23D300F7F35D /* SeriesDetailManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CF9DA283B23D300F7F35D /* SeriesDetailManagerTests.swift */; };
+		9CB832BC283C520E00A68372 /* SeriesDetailViewModelProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB832BB283C520E00A68372 /* SeriesDetailViewModelProtocolMock.swift */; };
+		9CB832C4283C545F00A68372 /* EpisodesDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB832C3283C545F00A68372 /* EpisodesDetailsViewControllerTests.swift */; };
+		9CB832C9283C576700A68372 /* EpisodesDetailsViewModelProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB832C8283C576700A68372 /* EpisodesDetailsViewModelProtocolMock.swift */; };
 		9CCDE47528386A1700F8FDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDE47428386A1700F8FDED /* AppDelegate.swift */; };
 		9CCDE47728386A1700F8FDED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDE47628386A1700F8FDED /* SceneDelegate.swift */; };
 		9CCDE47928386A1700F8FDED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCDE47828386A1700F8FDED /* ViewController.swift */; };
@@ -128,6 +133,8 @@
 		9C17C83C28397F7F00A39497 /* SeriesSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesSearchRequest.swift; sourceTree = "<group>"; };
 		9C6658372839B13600F858B9 /* SeriesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesDetailViewController.swift; sourceTree = "<group>"; };
 		9C66583F2839B9B400F858B9 /* SeriesDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesDetailService.swift; sourceTree = "<group>"; };
+		9C9AE123283BE7C2009DCB63 /* SeriesDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesDetailViewModelTests.swift; sourceTree = "<group>"; };
+		9C9AE12B283BF989009DCB63 /* SeriesDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		9C9CF94B283B056600F7F35D /* SeriesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesServiceTests.swift; sourceTree = "<group>"; };
 		9C9CF960283B06CB00F7F35D /* loadSeriesSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loadSeriesSuccess.json; sourceTree = "<group>"; };
 		9C9CF965283B0F8000F7F35D /* loadSearchSeriesSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loadSearchSeriesSuccess.json; sourceTree = "<group>"; };
@@ -144,6 +151,9 @@
 		9C9CF9CD283B1D1A00F7F35D /* SeriesServiceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesServiceProtocolMock.swift; sourceTree = "<group>"; };
 		9C9CF9D5283B21DB00F7F35D /* XCTest+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+.swift"; sourceTree = "<group>"; };
 		9C9CF9DA283B23D300F7F35D /* SeriesDetailManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesDetailManagerTests.swift; sourceTree = "<group>"; };
+		9CB832BB283C520E00A68372 /* SeriesDetailViewModelProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesDetailViewModelProtocolMock.swift; sourceTree = "<group>"; };
+		9CB832C3283C545F00A68372 /* EpisodesDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		9CB832C8283C576700A68372 /* EpisodesDetailsViewModelProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesDetailsViewModelProtocolMock.swift; sourceTree = "<group>"; };
 		9CCDE47128386A1700F8FDED /* TVSeriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVSeriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCDE47428386A1700F8FDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CCDE47628386A1700F8FDED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -501,8 +511,11 @@
 		9C9CF989283B11F800F7F35D /* SeriesDetails */ = {
 			isa = PBXGroup;
 			children = (
+				9CB832BA283C520000A68372 /* Mocks */,
 				9C9CF991283B126900F7F35D /* SeriesDetailsServiceTests.swift */,
 				9C9CF9DA283B23D300F7F35D /* SeriesDetailManagerTests.swift */,
+				9C9AE123283BE7C2009DCB63 /* SeriesDetailViewModelTests.swift */,
+				9C9AE12B283BF989009DCB63 /* SeriesDetailViewControllerTests.swift */,
 			);
 			path = SeriesDetails;
 			sourceTree = "<group>";
@@ -513,6 +526,7 @@
 				9C9CF9C3283B1C4A00F7F35D /* Mocks */,
 				9C9CF9A6283B14DC00F7F35D /* EpisodesDetailsServiceTests.swift */,
 				9C9CF9B3283B166D00F7F35D /* EpisodesDetailsViewModelTests.swift */,
+				9CB832C3283C545F00A68372 /* EpisodesDetailsViewControllerTests.swift */,
 			);
 			path = EpisodesDetails;
 			sourceTree = "<group>";
@@ -521,6 +535,7 @@
 			isa = PBXGroup;
 			children = (
 				9C9CF9C4283B1C5400F7F35D /* EpisodesDetailsServiceProtocolMock.swift */,
+				9CB832C8283C576700A68372 /* EpisodesDetailsViewModelProtocolMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -529,6 +544,14 @@
 			isa = PBXGroup;
 			children = (
 				9C9CF9CD283B1D1A00F7F35D /* SeriesServiceProtocolMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9CB832BA283C520000A68372 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9CB832BB283C520E00A68372 /* SeriesDetailViewModelProtocolMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -889,10 +912,15 @@
 				9C9CF9CE283B1D1A00F7F35D /* SeriesServiceProtocolMock.swift in Sources */,
 				9C9CF9D6283B21DB00F7F35D /* XCTest+.swift in Sources */,
 				9C9CF94C283B056600F7F35D /* SeriesServiceTests.swift in Sources */,
+				9C9AE12C283BF989009DCB63 /* SeriesDetailViewControllerTests.swift in Sources */,
 				9C9CF974283B103700F7F35D /* FileRepresentation.swift in Sources */,
 				9C9CF992283B126900F7F35D /* SeriesDetailsServiceTests.swift in Sources */,
 				9C9CF9B4283B166D00F7F35D /* EpisodesDetailsViewModelTests.swift in Sources */,
 				9C9CF9A7283B14DC00F7F35D /* EpisodesDetailsServiceTests.swift in Sources */,
+				9CB832C4283C545F00A68372 /* EpisodesDetailsViewControllerTests.swift in Sources */,
+				9CB832BC283C520E00A68372 /* SeriesDetailViewModelProtocolMock.swift in Sources */,
+				9C9AE124283BE7C2009DCB63 /* SeriesDetailViewModelTests.swift in Sources */,
+				9CB832C9283C576700A68372 /* EpisodesDetailsViewModelProtocolMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

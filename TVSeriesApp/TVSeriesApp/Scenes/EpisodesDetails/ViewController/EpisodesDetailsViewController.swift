@@ -21,7 +21,19 @@ class EpisodesDetailsViewController: UIViewController {
 
     // MARK: - Properties
 
-    let viewModel = EpisodesDetailsViewModel()
+    let viewModel: EpisodesDetailsViewModelProtocol
+    
+    // MARK: - Initializers
+    
+    init(viewModel: EpisodesDetailsViewModelProtocol = EpisodesDetailsViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.viewModel = EpisodesDetailsViewModel()
+        super.init(coder: coder)
+    }
     
     // MARK: - Overrides
 

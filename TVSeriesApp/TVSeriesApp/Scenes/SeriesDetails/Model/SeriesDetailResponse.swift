@@ -12,10 +12,10 @@ struct SeriesDetailResponse: Codable {
     let name: String
     let genres: [String]
     let premiered: String
-    let ended: String
+    let ended: String?
     let schedule: SeriesDetailSchedule
     let summary: String
-    let image: SeriesImage
+    let image: SeriesImage?
 }
 
 struct SeriesDetailSchedule: Codable {

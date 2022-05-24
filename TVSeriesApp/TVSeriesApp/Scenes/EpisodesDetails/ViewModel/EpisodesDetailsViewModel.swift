@@ -14,7 +14,14 @@ enum EpisodesDetailsState {
     case data
 }
 
-class EpisodesDetailsViewModel {
+protocol EpisodesDetailsViewModelProtocol {
+    var state: Observable<EpisodesDetailsState> { get }
+    var data: EpisodesDetailsViewData? { get }
+    func loadEpisodeDetails()
+    func setupParams(with params: EpisodeParamsDTO)
+}
+
+class EpisodesDetailsViewModel: EpisodesDetailsViewModelProtocol {
     
     // MARK: - Public properties
 
@@ -32,11 +39,11 @@ class EpisodesDetailsViewModel {
         self.service = service
     }
     
+    // MARK: - Public methods
+    
     func setupParams(with params: EpisodeParamsDTO) {
         paramsDTO = params
     }
-    
-    // MARK: - Public methods
     
     func loadEpisodeDetails() {
         self.state.value = .loading

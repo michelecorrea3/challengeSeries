@@ -140,7 +140,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         view.endEditing(true)
-        viewModel.searchSerie(for: searchBar.text ?? "")
+        viewModel.searchSeries(for: searchBar.text ?? "")
         searchController.isActive = false
     }
 

@@ -22,8 +22,20 @@ class SeriesDetailViewController: UIViewController {
     
     // MARK: - Private properties
 
-    private let viewModel = SeriesDetailViewModel()
+    private let viewModel: SeriesDetailViewModelProtocol
     private var selectedCellIndexPath: IndexPath?
+    
+    // MARK: - Initializers
+    
+    init(viewModel: SeriesDetailViewModelProtocol = SeriesDetailViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.viewModel = SeriesDetailViewModel()
+        super.init(coder: coder)
+    }
     
     // MARK: - Overrides
 

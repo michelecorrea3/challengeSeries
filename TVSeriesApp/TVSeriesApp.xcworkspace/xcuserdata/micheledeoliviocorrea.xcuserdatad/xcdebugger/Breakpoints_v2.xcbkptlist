@@ -14,9 +14,9 @@
             filePath = "TVSeriesApp/Scenes/Series/ViewModel/SeriesViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "searchSerie(for:)"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "searchSeries(for:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -30,9 +30,9 @@
             filePath = "TVSeriesApp/Scenes/Series/ViewModel/SeriesViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "searchSerie(for:)"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "searchSeries(for:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -46,8 +46,8 @@
             filePath = "TVSeriesApp/Scenes/Series/ViewModel/SeriesViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "loadSeries(resetPageCount:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,10 +126,10 @@
             filePath = "TVSeriesApp/Scenes/Series/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "setupDataBinding()"
-            landmarkType = "7">
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -142,9 +142,9 @@
             filePath = "TVSeriesApp/Scenes/Series/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "setupDataBinding()"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -174,10 +174,8 @@
             filePath = "TVSeriesApp/Scenes/Series/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "searchBar(_:textDidChange:)"
-            landmarkType = "7">
+            startingLineNumber = "162"
+            endingLineNumber = "162">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -190,10 +188,8 @@
             filePath = "TVSeriesApp/Scenes/Series/ViewController/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "searchBarSearchButtonClicked(_:)"
-            landmarkType = "7">
+            startingLineNumber = "158"
+            endingLineNumber = "158">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -206,10 +202,122 @@
             filePath = "TVSeriesApp/Scenes/EpisodesDetails/ViewModel/EpisodesDetailsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "init(service:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46404556-B0B4-4F21-94B4-3762B08A6FA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVSeriesApp/Scenes/SeriesDetails/ViewModel/SeriesDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "loadSeriesDetails(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "46404556-B0B4-4F21-94B4-3762B08A6FA7 - dad0a6c8d5467be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVSeriesApp.SeriesDetailViewModel.loadSeriesDetails(with: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
+                  moduleName = "TVSeriesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/micheledeoliviocorrea/Documents/challengeSeries/TVSeriesApp/TVSeriesApp/Scenes/SeriesDetails/ViewModel/SeriesDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "251">
+               </Location>
+               <Location
+                  uuid = "46404556-B0B4-4F21-94B4-3762B08A6FA7 - 9fe8c9f81e0f9e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TVSeriesApp.SeriesDetailModel) -&gt; () in TVSeriesApp.SeriesDetailViewModel.loadSeriesDetails(with: Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
+                  moduleName = "TVSeriesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/micheledeoliviocorrea/Documents/challengeSeries/TVSeriesApp/TVSeriesApp/Scenes/SeriesDetails/ViewModel/SeriesDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "939C7709-3DD7-4712-BBF7-8F95E1818C4C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVSeriesApp/Scenes/SeriesDetails/ViewController/SeriesDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5071D475-5285-4CED-8050-93964FF83EA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVSeriesApp/Scenes/SeriesDetails/ViewController/SeriesDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D71DE7E3-096D-4DC0-BDAD-6837C6C7D215"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVSeriesApp/Infra/Service/ApiProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "makeRequest(request:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3FA6177-4E8C-42B8-AAFB-04BBE523617F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVSeriesApp/Infra/Service/ApiProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "makeRequest(request:success:failure:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

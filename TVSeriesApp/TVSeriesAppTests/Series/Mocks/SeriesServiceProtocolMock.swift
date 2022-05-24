@@ -25,5 +25,11 @@ class SeriesServiceProtocolMock: SeriesServiceProtocol {
     
     func searchSerie(for name: String, success: @escaping SearchSuccess, failure: @escaping Failure) {
         searchSerieCalled = true
+        
+        if returnsSuccess {
+            success([SeriesSearchResponse(show: SeriesResponse(id: 1, name: "name", image: nil))])
+        } else {
+            failure(SeriesError.generic)
+        }
     }
 }

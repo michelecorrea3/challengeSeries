@@ -57,7 +57,7 @@ class SeriesViewModel {
         })
     }
     
-    func searchSerie(for name: String) {
+    func searchSeries(for name: String) {
         isSearching = true
         pageCount = 0
         

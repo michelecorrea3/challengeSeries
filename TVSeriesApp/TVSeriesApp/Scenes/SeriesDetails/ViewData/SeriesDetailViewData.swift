@@ -26,7 +26,7 @@ struct SeriesDetailViewData {
         name = model.mainInfo.name
         genre = model.mainInfo.genres.joined(separator: " | ")
         dayTime = model.mainInfo.schedule.days.joined(separator: ", ") + " at " + model.mainInfo.schedule.time
-        imageUrl = model.mainInfo.image.medium
+        imageUrl = model.mainInfo.image?.medium ?? ""
         summary = model.mainInfo.summary
     }
     
