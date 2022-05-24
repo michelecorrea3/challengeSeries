@@ -106,9 +106,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         if viewModel.displaySearchError() {
             let cell = UITableViewCell()
-            let label = UILabel(frame: CGRect(x: 20, y: 20, width: cell.bounds.width, height: 100))
-            label.text = "Ops, tv series not found!"
-            cell.addSubview(label)
+            let contentView = UIView(frame: CGRect(x: 20, y: 20, width: tableView.bounds.width - 40, height: 100))
+            contentView.backgroundColor = .lightGray
+            contentView.layer.cornerRadius = 10
+            contentView.clipsToBounds = true
+            let label = UILabel(frame: CGRect(x: 20, y: 0, width: contentView.bounds.width, height: contentView.bounds.height))
+            label.text = "Ops, tv series not found! :("
+            contentView.addSubview(label)
+            cell.addSubview(contentView)
             cell.backgroundColor = .white
             return cell
         }
